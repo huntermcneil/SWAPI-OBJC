@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iZZ-Qd-8it">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KPs-uG-7PM">
+            <objects>
+                <viewController id="iZZ-Qd-8it" customClass="DVMViewController" customModule="SWAPI_OBJC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fyq-fg-y6E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ioZ-ce-LfT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ka1-Jy-82l"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="OjC-ed-NSh">
+                                <rect key="frame" x="20" y="188" width="374" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-qV-SBO">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(height)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMh-N1-Eqb">
+                                        <rect key="frame" x="0.0" y="107.5" width="374" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-wars-logo-new-tall" translatesAutoresizingMaskIntoConstraints="NO" id="d2B-Pj-6pp">
+                                <rect key="frame" x="60" y="647" width="294" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="2Il-SP-du8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d2B-Pj-6pp" firstAttribute="centerX" secondItem="Cya-Uw-JRs" secondAttribute="centerX" id="3HC-4U-uBl"/>
+                            <constraint firstItem="Cya-Uw-JRs" firstAttribute="trailing" secondItem="d2B-Pj-6pp" secondAttribute="trailing" constant="60" id="BPh-5z-Xdh"/>
+                            <constraint firstItem="ioZ-ce-LfT" firstAttribute="top" secondItem="Cya-Uw-JRs" secondAttribute="top" id="GQI-lg-s4C"/>
+                            <constraint firstItem="Cya-Uw-JRs" firstAttribute="trailing" secondItem="OjC-ed-NSh" secondAttribute="trailing" constant="20" id="MEb-cU-w65"/>
+                            <constraint firstItem="ioZ-ce-LfT" firstAttribute="leading" secondItem="Cya-Uw-JRs" secondAttribute="leading" id="e4L-aV-q1y"/>
+                            <constraint firstItem="d2B-Pj-6pp" firstAttribute="leading" secondItem="Cya-Uw-JRs" secondAttribute="leading" constant="60" id="jb2-Ax-eXr"/>
+                            <constraint firstItem="Cya-Uw-JRs" firstAttribute="bottom" secondItem="d2B-Pj-6pp" secondAttribute="bottom" constant="45" id="mnw-j9-npz"/>
+                            <constraint firstItem="OjC-ed-NSh" firstAttribute="leading" secondItem="Cya-Uw-JRs" secondAttribute="leading" constant="20" id="uAg-k2-fbF"/>
+                            <constraint firstItem="OjC-ed-NSh" firstAttribute="top" secondItem="ioZ-ce-LfT" secondAttribute="bottom" constant="100" id="wqP-hh-C1M"/>
+                            <constraint firstItem="ioZ-ce-LfT" firstAttribute="trailing" secondItem="Cya-Uw-JRs" secondAttribute="trailing" id="zqD-3o-hrJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cya-Uw-JRs"/>
+                    </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="zMh-N1-Eqb" id="oip-A0-toE"/>
+                        <outlet property="nameLabel" destination="xAb-qV-SBO" id="VXl-O2-gev"/>
+                        <outlet property="personSearchBar" destination="ioZ-ce-LfT" id="9cd-Gy-fWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccg-LX-kIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="165.40178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Star-wars-logo-new-tall" width="1536" height="864"/>
+    </resources>
+</document>
